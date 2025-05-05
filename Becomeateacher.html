@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kider - Preschool Website</title>
+    <link rel="stylesheet" href="Child_style.css">
+    <link rel="stylesheet" href="Child-animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    background-color: #FFF5F3;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+}
+
+.navbar2 {
+    position: sticky;
+    top: 0;
+    /* width: 97%; */
+    background: #fff;
+    transition: top 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar2.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.navbar2.hidden {
+    top: -80px; /* Moves navbar out of view */
+}
+
+
+
+
+.logo2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+    font-family: "Sofia", sans-serif;
+    font-size: 35px;
+    color: #fe5d37;
+}
+
+.logo2 p {
+    margin: 0;
+    font-size: 33px;
+    font-weight: 900;
+}
+
+.nav-links2 {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links2 li a {
+    text-decoration: none;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+    transition: color 0.3s, background 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav-links2 li a.active {
+    color: #fe5d37;
+}
+
+.nav-links2 li a:hover {
+    color: #fe5d37;
+}
+
+.nav-links2 li {
+    position: relative;
+}
+
+.nav_ol2 {
+    display: none;
+    position: absolute;
+    color: #6C6F73;
+    left: 10px;
+    background: rgb(255, 255, 255);
+    list-style: none;
+    padding: 8px 0 0 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 160px;
+}
+
+.pages2 {
+    position: relative;
+    z-index: 3;
+}
+
+.pages2:hover .nav_ol2 {
+    color: #ffffff;
+    display: block;
+}
+
+.nav_ol2 li {
+    padding: 0px;
+}
+
+.nav_ol2 a {
+    display: block;
+    padding: 8px 12px;
+    color: black;
+}
+
+.nav_ol2 a:hover {
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+.join-btn2 {
+    background: #fe5d37;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.join-btn2:hover {
+    background: #eb2805;
+}
+
+/* Carousel Image */
+.carousel-img-main {
+    /* width: 100%;
+    height: 20%; */
+    position: relative !important;
+    margin-bottom: 3rem !important;
+    /* padding-top: 3rem !important; */
+    padding-bottom: 3rem !important;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(./imgs/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+    /* padding-left: 20px; */
+}
+/* Text on Image */
+.text-on-img {
+    width: 100%;
+    height: 50%;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    padding-left: 15px;
+}
+.text-on-img h1{
+    font-family: 'Lobster Two', cursive;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 1.5rem !important;
+    color: #fff !important;
+}
+.breadcrumb{
+    display: flex;
+        flex-wrap: wrap;
+        padding: 0 0;
+        margin-bottom: 1rem;
+        list-style: none;
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: .5rem;
+}
+.breadcrumb a{
+    color: #FE5D37;
+    text-decoration: none;
+}
+.text-white {
+    color: #fff !important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+}
+.header-top2 {
+    width: 100%;
+    padding-top: 21px;
+    background-image: url("./imgs/bg-header-top.png");
+    background-position: top;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+
+.header-bottom2 {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    width: 98.1%;
+    background-image: url(./imgs/bg-header-bottom.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    z-index: 1;
+}
+
+/* Apply animation only to h1 and p */
+.Ani_become {
+    animation: slideDown 1s ease-out;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+         <!-- Loader -->
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+
+        <div class="navbar2">
+            <div class="logo2">
+                <i class="fas fa-book-reader"></i>
+                <p>Kider</p>
+            </div>
+
+            <ul class="nav-links2">
+                <li><a href="Child.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Classes.html">Classes</a></li>
+
+                <li class="pages2">
+                    <a href="#"  class="active">Pages <i class='fas fa-angle-down'></i></a>
+                    <ol class="nav_ol2">
+                        <li><a href="Schoolfacilities.html">School Facilities</a></li>
+                        <li><a href="Populartechers.html" >Popular Teachers</a></li>
+                        <li><a href="Becomeateacher.html" class="active">Become A Teacher</a></li>
+                        <li><a href="Makeappointment.html">Make Appointment</a></li>
+                        <li><a href="Testimonial.html">Testimonial</a></li>
+                        <li><a href="404Error.html">404 Error</a></li>
+                    </ol>
+                </li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+            <button class="join-btn2">Join Us →</button>
+
+        </div>
+        <div class="carousel-img-main">
+            <img class="header-top2">
+           <div class="text-on-img">
+             <h1 class="Ani_become">Become A Teachers</h1>
+             <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Become A Teachers</li>
+                </ol>
+            </nav>
+            </div>
+            <img class="header-bottom2">
+        </div>
+          <!-- Become A Teacher -->
+          <div class="become-teacher-cantent">
+
+            <div class="teacher-img">
+                <img class="call-to-action" src="./imgs/call-to-action.jpg" alt="call-to-action">
+            </div>
+            <div class="teacher-txt-btn">
+                <div class="teacher-txt">
+                    <h1>Become A Teacher</h1>
+                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                        Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                    </p>
+
+                    <button class="btn-teacher">Get Started Now →</button>
+                </div>
+            </div>
+
+
+        </div>
+
+     <!--Get In Touch Quick LinksPhoto Gallery Newsletter-->
+            <!--Footware-->
+            <div class="BOTTOM-MAIN-CONTAINER">
+                <div class="Bottom-container">
+
+                    <div class="get-in-touch">
+                        <h1>Get In Touch</h1>
+                        <p class="btm-text"><i class="fas fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                        <p class="btm-text"><i class="fas fa-phone-alt"></i>+012 345 67890</p>
+                        <p><i class="fas fa-envelope"></i>info@example.com</p>
+                        <div class="btm-icons">
+                            <a class="a-btm-icons">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="a-btm-icons">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a class="a-btm-icons">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a class="a-btm-icons">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!--Quick Links-->
+                    <div class="Quick-Links">
+                        <h1> Quick Links</h1>
+                        <p><i class="arrow right"></i> About Us</p>
+                        <p><i class="arrow right"></i> Contact Us</p>
+                        <p><i class="arrow right"></i> Our Services</p>
+                        <p><i class="arrow right"></i> Privacy Policy</p>
+                        <p><i class="arrow right"></i> Terms & Condition</p>
+
+                    </div>
+
+                    <!--Photo Gallery-->
+
+                    <div class="Main-Photo-Gallery">
+                        <h1>Photo Gallery</h1>
+                        <div class="Photos-Gallery">
+                            <img class="Photos-g" src="./imgs/classes-1.jpg" alt="classes-1">
+                            <img class="Photos-g" src="./imgs/classes-2.jpg" alt="classes-2">
+                            <img class="Photos-g" src="./imgs/classes-3.jpg" alt="classes-3">
+                            <img class="Photos-g" src="./imgs/classes-4.jpg" alt="classes-4">
+                            <img class="Photos-g" src="./imgs/classes-5.jpg" alt="classes-5">
+                            <img class="Photos-g" src="./imgs/classes-6.jpg" alt="classes-6">
+                        </div>
+                    </div>
+
+                    <!--Newsletter-->
+
+                    <div class="Main-Newsletter">
+                        <h1>Newsletter</h1>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+
+                        <div class="mail-input">
+                            <input class="input" type="text" placeholder="Your Email">
+                            <button class="btn-signup">SignUp</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="bottom-hr"><hr></div> -->
+
+                <!--Bottom-Nav-Bar-->
+                <div class="Bottom-Nav-Bar">
+                    <div class="Bottom-Pera-Elem">
+                        <div class="bottom-peragraph">
+                            ©
+                            <a class="border-sitename" href="">Your Site Name</a>
+                            , All Right Reserved.
+                            Designed By
+                            <a class="border-sitename" href="">HTML Codex</a>
+
+                        </div>
+                        <div class="Bottom-Nav-Elements">
+                            <a class="bottom-home" href="">Home</a>
+
+                            <a class="bottom-home" href="">Cookies</a>
+
+                            <a class="bottom-home" href="">Help</a>
+
+                            <a class="bottom-home-1" href="">FQAs</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom-left-button -->
+         <div class="Container-Bottom-Left-Button">
+                
+            <a class="Bottom-Left-Button">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+    
+    </div>
+</div>
+<script>
+    // NAVBAR FOR ONLY THE ABOUT AND REMAING IN THE NAVBAR ELEMENTS
+    document.addEventListener("DOMContentLoaded", () => {
+    let navbar = document.querySelector(".navbar2");
+    let carousel = document.querySelector(".carousel-img-main");
+
+    let showThreshold = carousel.offsetHeight * 0.8; // 80% of carousel height
+
+    window.addEventListener("scroll", function () {
+        let scrollPosition = window.scrollY;
+
+        if (scrollPosition > showThreshold) {
+            navbar.classList.remove("hidden"); // Show navbar
+            navbar.classList.add("shadow");   // Add shadow
+        } else {
+            navbar.classList.add("hidden");   // Hide navbar initially
+            navbar.classList.remove("shadow"); // Remove shadow
+        }
+    });
+});
+
+
+/*Bottom-left-button-JS*/
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollButton = document.querySelector(".Container-Bottom-Left-Button");
+
+    if (!scrollButton) {
+        console.error("Scroll button not found.");
+        return;
+    }
+
+    // Function to check scroll position
+    function checkScroll() {
+        if (window.scrollY > 100) {  // Show button after scrolling down 100px
+            scrollButton.style.opacity = "1";
+            scrollButton.style.pointerEvents = "auto";
+        } else {  // Hide button when at the top
+            scrollButton.style.opacity = "0";
+            scrollButton.style.pointerEvents = "none";
+        }
+    }
+
+    // Check scroll position on page scroll
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Initial check in case page loads scrolled down
+
+    // Scroll to top with slow start and fast end
+    scrollButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+
+
+/* CSS Animaction become teacher cantant --JS */
+document.addEventListener("DOMContentLoaded", function () {
+    let observer = new IntersectionObserver(
+        function (entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("blink-once");
+                    observer.unobserve(entry.target); // Stop observing after triggering once
+                }
+            });
+        },
+        { threshold: 1 } // Adjust threshold as needed
+    );
+
+    let target = document.querySelector(".become-teacher-cantent"); // Apply to the full container
+    if (target) {
+        observer.observe(target);
+    }
+});
+
+/* Loader For Page */
+        // Show loader on page refresh
+        document.addEventListener("DOMContentLoaded", function () {
+            let loader = document.getElementById("loader");
+            loader.style.visibility = "visible";
+
+            setTimeout(function () {
+                loader.style.opacity = "0"; // Super-fast fade-out
+                setTimeout(() => {
+                    loader.style.visibility = "hidden";
+                }, 200); // Hide after fade-out (0.2s)
+            }, 500); // Hide after animation (0.5s)
+        });
+
+
+// <!--Get In Touch Quick LinksPhoto Gallery Newsletter-->
+// <!--Footware-->
+
+document.addEventListener("DOMContentLoaded", function () {
+    const bottomSection = document.querySelector(".BOTTOM-MAIN-CONTAINER");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                bottomSection.classList.add("blink-once");
+                observer.unobserve(bottomSection); // Stop observing after first trigger
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(bottomSection);
+});
+</script>
+</body>
+</html>

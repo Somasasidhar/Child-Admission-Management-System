@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    background-color: #FFF5F3;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+}
+
+.navbar2 {
+    position: sticky;
+    top: 0;
+    width: 93.%;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: top 0.5s ease-in-out;
+    z-index: 2;
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar2.hidden {
+    top: -80px; /* Hide when scrolling down */
+}
+
+
+
+.logo2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+    font-family: "Sofia", sans-serif;
+    font-size: 35px;
+    color: #fe5d37;
+}
+
+.logo2 p {
+    margin: 0;
+    font-size: 33px;
+    font-weight: 900;
+}
+
+.nav-links2 {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links2 li a {
+    text-decoration: none;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s, background 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav-links2 li a.active {
+    color: #fe5d37;
+}
+
+.nav-links2 li a:hover {
+    color: #fe5d37;
+}
+
+.nav-links2 li {
+    position: relative;
+}
+
+.nav_ol2 {
+    display: none;
+    position: absolute;
+    color: #6C6F73;
+    left: 10px;
+    background: rgb(255, 255, 255);
+    list-style: none;
+    padding: 8px 0 0 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 160px;
+}
+
+.pages2 {
+    position: relative;
+    z-index: 3;
+}
+
+.pages2:hover .nav_ol2 {
+    color: #ffffff;
+    display: block;
+}
+
+.nav_ol2 li {
+    padding: 0px;
+}
+
+.nav_ol2 a {
+    display: block;
+    padding: 8px 12px;
+    color: black;
+}
+
+.nav_ol2 a:hover {
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+.join-btn2 {
+    background: #fe5d37;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.join-btn2:hover {
+    background: #eb2805;
+}
+
+/* Carousel Image */
+.carousel-img-main {
+    /* width: 100%;
+    height: 20%; */
+    position: relative !important;
+    margin-bottom: 3rem !important;
+    /* padding-top: 3rem !important; */
+    padding-bottom: 3rem !important;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(./imgs/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+    /* padding-left: 20px; */
+}
+/* Text on Image */
+.text-on-img {
+    width: 100%;
+    height: 50%;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    padding-left: 15px;
+}
+.text-on-img h1{
+    font-family: 'Lobster Two', cursive;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 1.5rem !important;
+    color: #fff !important;
+}
+.breadcrumb{
+    display: flex;
+        flex-wrap: wrap;
+        padding: 0 0;
+        margin-bottom: 1rem;
+        list-style: none;
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: .5rem;
+}
+.breadcrumb a{
+    color: #FE5D37;
+    text-decoration: none;
+}
+.text-white {
+    color: #fff !important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+}
+.header-top2 {
+    width: 100%;
+    padding-top: 21px;
+    background-image: url("./imgs/bg-header-top.png");
+    background-position: top;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+
+.header-bottom2 {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    width: 98.1%;
+    background-image: url(./imgs/bg-header-bottom.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    z-index: 1;
+}
+/*Bottom--Nav--Bar*/
+.mail-input2{
+    /* margin: 10px; */
+    /* background-color: black; */
+    border: 2px solid #93a4a9;
+    border-radius: 10px;
+    width: 107%;
+}
+.mail-input2:focus-within {
+    border-color: rgb(252, 190, 167);
+    box-shadow: 0 0 5px rgb(241, 161, 134); 
+    /* transition: 0.3s ease-in-out; Smooth transition effect; */
+}
+.Bottom-container2{
+    /* background-color: #103741; */
+    color: #93a4a9;
+    padding: 15px;
+    margin-top: 30px;
+    padding: 20px;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    width: 97.%;
+    margin-right: 10px;
+}

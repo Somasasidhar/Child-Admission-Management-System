@@ -1,0 +1,227 @@
+
+/*CAROSULES --JS*/
+/*LearnMore And OurClass Btns Animation*/
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.Learn-more {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+.Our-class {
+    animation: slideInRight 0.5s ease-out;
+}
+
+/*This will animate only the heading (h1) and paragraph (p) 
+from the top to their original place without affecting other elements!*/
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-150px); /* Start from above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+
+/* Apply animation only to h1 and p */
+.text-overlay h1 {
+    animation: slideDown 1s ease-out;
+}
+
+/*Main-School-Facilities*/
+/* Slide-up animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hide elements initially */
+.text3, .circle-card {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+/* This class will be added dynamically */
+.animate {
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+/* Staggered animation for text */
+.text3.animate {
+    animation-delay: 0.1s;
+}
+
+/* Staggered animation for cards */
+.card1.animate {
+    animation-delay: 0.2s;
+}
+.card2.animate {
+    animation-delay: 0.4s;
+}
+.card3.animate {
+    animation-delay: 0.6s;
+}
+.card4.animate {
+    animation-delay: 0.8s;
+}
+
+
+
+
+/*Learn More About Our Work And Our Cultural Activities*/
+/* Keyframes for slide-up effect */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initially hide the elements */
+.text-img, .imgs-ceo {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+/* This class will be added dynamically via JavaScript */
+.animate {
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+/* Staggered effect */
+.text-img.animate {
+    animation-delay: 0.2s;
+}
+
+.imgs-ceo.animate {
+    animation-delay: 0.4s;
+}
+
+
+
+/* CSS Animaction become teacher cantant */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink-once {
+    animation: blink 1s ease-in-out;
+}
+
+/*CSS Animaction for  School Classes*/
+.card1-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.card1-container.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*CSS Animaction Popular Teachers*/
+/* Initially hidden */
+.text-popular-teacher, .circles-teachers {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When visible, fade in */
+.text-popular-teacher.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay effect for each card */
+.circles-teachers.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+/**/
+/*CSS Animaction for Our Clients Say! Feedback-container*/
+
+/* Apply animation to text, feedback container, and buttons */
+.text-popular-teacher2,
+.feedback-111,
+.btn-feedback-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When elements come into view, make them visible */
+.text-popular-teacher2.show,
+.feedback-111.show,
+.btn-feedback-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+/*CSS Animations for Make-Appointment-container */
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.blink-animation {
+    animation: blink 0.5s ease-in-out 1;
+}
+
+
+/* <!--Get In Touch Quick LinksPhoto Gallery Newsletter-->
+<!--Footware--> */
+
+@keyframes smooth-blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+.blink-once {
+    animation: smooth-blink 1s ease-in-out 1;
+}

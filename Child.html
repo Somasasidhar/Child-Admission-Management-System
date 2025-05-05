@@ -1,0 +1,855 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Child - Preschool Website Child</title>
+    <link rel="stylesheet" href="Child_style.css">
+    <link rel="stylesheet" href="Child-animations.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body style="background-color:#FFF5F3">
+    <!-- <div class="container"> -->
+        <div class="maindiv">
+
+            <!-- Loader -->
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+
+
+            <!-- TOP-NAV-BAR -->
+            <!-- <div class="NavPositionSet"> -->
+                
+                <!-- <div class="navbar">
+                    <div class="logo">
+                        <i class="fas fa-book-reader"></i>
+                        <p>Child</p>
+                    </div>
+                    <div class="nav-links">
+                        <div class="H-A-C-P-C">
+                            <a href="Child.html" class="active">Home</a>
+                        </div>
+                        <div class="H-A-C-P-C">
+                            <a href="About.html">About Us</a>
+                        </div>
+                        <div class="H-A-C-P-C">
+                            <a href="Classes.html">Classes</a>
+                        </div>
+
+                        <div class="pages H-A-C-P-C">
+                            <div class="H-A-C-P-C">
+                                <a href="#" class="pageshover">Pages <i class='fas fa-angle-down'></i></a>
+                            </div>
+                            <div class="nav_ol H-A-C-P-C">
+                                <a href="Schoolfacilities.html">School Facilities</a>
+                                <a href="Populartechers.html">Popular Teachers</a>
+                                <a href="Becomeateacher.html">Become A Teacher</a>
+                                <a href="Makeappointment.html">Make Appointment</a>
+                                <a href="Testimonial.html">Testimonial</a>
+                                <a href="404Error.html">404 Error</a>
+                            </div>
+                        </div>
+
+                        <div class="H-A-C-P-C">
+                            <a href="ContactUs.html">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <button class="join-btn">Join Us →</button>
+
+                </div> -->
+                <div class="navbar">
+                    <div class="logo">
+                        <i class="fas fa-book-reader"></i>
+                        <p>Child</p>
+                    </div>
+                    <div class="ToggleMenu" > &#9776; </div>
+                    <div class="nav-links">
+                        <div class="H-A-C-P-C">
+                            <a href="Child.html" class="active">Home</a>
+                        </div>
+                        <div class="H-A-C-P-C">
+                            <a href="About.html">About Us</a>
+                        </div>
+                        <div class="H-A-C-P-C">
+                            <a href="Classes.html">Classes</a>
+                        </div>
+
+                        <div class="pages H-A-C-P-C">
+                            <div class="H-A-C-P-C">
+                                <a href="#" class="pageshover">Pages <i class='fas fa-angle-down'></i></a>
+                            </div>
+                            <div class="nav_ol H-A-C-P-C">
+                                <a href="Schoolfacilities.html">School Facilities</a>
+                                <a href="Populartechers.html">Popular Teachers</a>
+                                <a href="Becomeateacher.html">Become A Teacher</a>
+                                <a href="Makeappointment.html">Make Appointment</a>
+                                <a href="Testimonial.html">Testimonial</a>
+                                <a href="404Error.html">404 Error</a>
+                            </div>
+                        </div>
+
+                        <div class="H-A-C-P-C">
+                            <a href="ContactUs.html">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <button class="join-btn">Join Us →</button>
+
+                </div>
+            <!-- </div> -->
+             <!-- End-NavBar -->
+            <!-- TOP-CAROUSLES -->
+             <div class="carousel_Buttons_Main">         
+                <div class="carousel">
+                    <div class="header-top-position">
+                        <img class="header-top">
+                    </div>
+                    <div class="carousel-track">
+                        <!-- <img class="header-top"> -->
+                        <div class="slide">
+                            <img src="./imgs/carousel-1.jpg" alt="Slide 1" class="carousel-img">
+                            <div class="text-overlay">
+                                <h1>The Best Kindergarten School <br>For Your Children</h1>
+                                <p>Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd
+                                    rebum ipsum et dlam Justo<br>clita et kasd rebum sea elitr.</p>
+
+                                <div class="learn-our-btns">
+                                    <button class="Learn-more">Learn More</button>
+                                <button class="Our-class">Our Classes</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="./imgs/carousel-2.jpg" alt="Slide 2" class="carousel-img">
+                            <div class="text-overlay">
+                                <h1>Make A Brighter Future For <br>Your Child</h1>
+                                <p>Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd
+                                    rebum ipsum et dlam Justo<br>clita et kasd rebum sea elitr.</p>
+
+                                <div class="learn-our-btns">
+                                    <button class="Learn-more">Learn More</button>
+                                <button class="Our-class">Our Classes</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <img class="header-bottom">
+                </div>
+
+                <div class="Round1-2">
+                    <button class="round1" onclick="prevSlide()"><</button>
+                    <button class="round2" onclick="nextSlide()">></button>
+                </div>
+            </div>
+
+            <!-- School Facilities -->
+            <div class="Main-School-Facilities">
+                <div class="text3">
+                    <h1>School Facilities</h1>
+                    <p style="font-family: Arial, Helvetica, sans-serif; color: rgb(168, 168, 168);">Eirmod sed ipsum
+                        dolor
+                        sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam
+                        justo
+                        sed
+                        rebum vero dolor duo.</p></br>
+                </div>
+                <div class="circle-card-container">
+                    
+                    <div class="circle-card card1">
+
+                        <h2>School Bus</h2>
+                        <p>Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+
+                        <div class="small-circle">
+                            <i class="fa fa-bus-alt"></i>
+                            <div class="ear left-ear"></div>
+                            <div class="ear right-ear"></div>
+                        </div>
+                    </div>
+                    <div class="circle-card card2">
+                        <h2>Playground</h2>
+                        <p>Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+
+                        <div class="small-circle">
+                            <i class="fa fa-soccer-ball-o"></i>
+                            <div class="ear left-ear"></div>
+                            <div class="ear right-ear"></div>
+                        </div>
+                    </div>
+                    <div class="circle-card card3">
+                        <h2>Healthy Canteen</h2>
+                        <p>Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+
+                        <div class="small-circle">
+                            <i class="fa fa-home"></i>
+                            <div class="ear left-ear"></div>
+                            <div class="ear right-ear"></div>
+                        </div>
+                    </div>
+                    <div class="circle-card card4">
+                        <h2>Positive Learning</h2>
+                        <p>Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+
+                        <div class="small-circle">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div class="ear left-ear"></div>
+                            <div class="ear right-ear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learn More About Our Work And Our Cultural Activities -->
+            <div class="content">
+                <div class="text-img">
+                    <h1>Learn More About Our Work And Our Cultural Activities</h1>
+                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                        Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p>Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam
+                        ipsum.
+                        Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos, ipsum labore duo
+                        duo
+                        sit no sea diam.
+                        Et dolor et kasd ea. Eirmod diam at dolor est vero nonumy magna.</p>
+
+                    <div class="txt-btn">
+                        <div class="btn-on">
+                            <button class="btn1">Read More</button>
+                        </div>
+                        <div class="ceo">
+                            <img class="img1" src="./imgs/user.jpg" alt="user">
+                            <div class="ceo-txt">
+                                <h4>Jhon Doe</h4>
+                                <p>CEO & Founder</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="imgs-ceo">
+                    <div>
+                        <img class="about-1" src="./imgs/about-1.jpg" alt="about-1">
+
+                        <img class="about-2" src="./imgs/about-2.jpg" alt="about-2">
+
+                        <img class="about-3" src="./imgs/about-3.jpg" alt="about-3">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Become A Teacher -->
+            <div class="become-teacher-cantent">
+
+                <div class="teacher-img">
+                    <img class="call-to-action" src="./imgs/call-to-action.jpg" alt="call-to-action">
+                </div>
+                <div class="teacher-txt-btn">
+                    <div class="teacher-txt">
+                        <h1>Become A Teacher</h1>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                        </p>
+
+                        <button class="btn-teacher">Get Started Now →</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!--School Classes-->
+            <div>
+                <div class="text3">
+                    <h1>School Classes</h1>
+                    <p style="font-family: Arial, Helvetica, sans-serif; color: rgb(168, 168, 168);">Eirmod sed ipsum
+                        dolor
+                        sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam
+                        justo
+                        sed
+                        rebum vero dolor duo.</p></br>
+                </div>
+                <div class="cards-6">
+                    <div class="card1-container">
+
+                        <img class="circle-img1" src="./imgs/classes-1.jpg" alt="classes-1">
+
+
+                        <div class="c1-container-txt">
+                            <div class="heading2">
+                                <h1>Art & Drawing</h1>
+                            </div>
+                            <div class="txt-btn2">
+                                <div class="ceo2">
+                                    <img class="img2" src="./imgs/user.jpg" alt="user">
+                                    <div class="ceo-txt2">
+                                        <h5>Jhon Doe</h5>
+                                        <p>Teacher</p>
+                                    </div>
+                                </div>
+                                <div class="btn-on2">
+                                    <button class="btn2">$99</button>
+                                </div>
+
+
+                            </div>
+
+                            <div class="line-txt">
+                                <div class="line-1">
+                                    <hr width="100px" size="3" color="#fe5d37">
+                                    <h8>Age:</h8>
+                                    <p>3-5 Years</p>
+                                </div>
+                                <div class="line-2">
+                                    <hr width="100px" size="3" color="#077e2f">
+                                    <h9>Time:</h9>
+                                    <p>9-10 AM</p>
+                                </div>
+                                <div class="line-3">
+                                    <hr width="80px" size="3" color="#ebc90d">
+                                    <h10>Capacity:</h10>
+                                    <p>30kids</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="card1-container">
+
+                        <img class="circle-img1" src="./imgs/classes-2.jpg" alt="classes-1">
+
+
+                        <div class="c1-container-txt">
+                            <div class="heading2">
+                                <h1>Color Management</h1>
+                            </div>
+                            <div class="txt-btn2">
+                                <div class="ceo2">
+                                    <img class="img2" src="./imgs/user.jpg" alt="user">
+                                    <div class="ceo-txt2">
+                                        <h5>Jhon Doe</h5>
+                                        <p>Teacher</p>
+                                    </div>
+                                </div>
+                                <div class="btn-on2">
+                                    <button class="btn2">$99</button>
+                                </div>
+
+
+                            </div>
+
+                            <div class="line-txt">
+                                <div class="line-1">
+                                    <hr width="80px" size="3" color="#fe5d37">
+                                    <h8>Age:</h8>
+                                    <p>3-5 Years</p>
+                                </div>
+                                <div class="line-2">
+                                    <hr width="100px" size="3" color="#077e2f">
+                                    <h9>Time:</h9>
+                                    <p>9-10 AM</p>
+                                </div>
+                                <div class="line-3">
+                                    <hr width="100px" size="3" color="#ebc90d">
+                                    <h10>Capacity:</h10>
+                                    <p>30kids</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="card1-container">
+
+                        <img class="circle-img1" src="./imgs/classes-3.jpg" alt="classes-1">
+
+
+                        <div class="c1-container-txt">
+                            <div class="heading2">
+                                <h1>Athletic & Dance</h1>
+                            </div>
+                            <div class="txt-btn2">
+                                <div class="ceo2">
+                                    <img class="img2" src="./imgs/user.jpg" alt="user">
+                                    <div class="ceo-txt2">
+                                        <h5>Jhon Doe</h5>
+                                        <p>Teacher</p>
+                                    </div>
+                                </div>
+                                <div class="btn-on2">
+                                    <button class="btn2">$99</button>
+                                </div>
+
+
+                            </div>
+
+                            <div class="line-txt">
+                                <div class="line-1">
+                                    <hr width="80px" size="3" color="#fe5d37">
+                                    <h8>Age:</h8>
+                                    <p>3-5 Years</p>
+                                </div>
+                                <div class="line-2">
+                                    <hr width="100px" size="3" color="#077e2f">
+                                    <h9>Time:</h9>
+                                    <p>9-10 AM</p>
+                                </div>
+                                <div class="line-3">
+                                    <hr width="100px" size="3" color="#ebc90d">
+                                    <h10>Capacity:</h10>
+                                    <p>30kids</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="card1-container">
+
+                        <img class="circle-img1" src="./imgs/classes-4.jpg" alt="classes-1">
+
+
+                        <div class="c1-container-txt">
+                            <div class="heading2">
+                                <h1>Language & Spaking</h1>
+                            </div>
+                            <div class="txt-btn2">
+                                <div class="ceo2">
+                                    <img class="img2" src="./imgs/user.jpg" alt="user">
+                                    <div class="ceo-txt2">
+                                        <h5>Jhon Doe</h5>
+                                        <p>Teacher</p>
+                                    </div>
+                                </div>
+                                <div class="btn-on2">
+                                    <button class="btn2">$99</button>
+                                </div>
+
+
+                            </div>
+
+                            <div class="line-txt">
+                                <div class="line-1">
+                                    <hr width="80px" size="3" color="#fe5d37">
+                                    <h8>Age:</h8>
+                                    <p>3-5 Years</p>
+                                </div>
+                                <div class="line-2">
+                                    <hr width="100px" size="3" color="#077e2f">
+                                    <h9>Time:</h9>
+                                    <p>9-10 AM</p>
+                                </div>
+                                <div class="line-3">
+                                    <hr width="100px" size="3" color="#ebc90d">
+                                    <h10>Capacity:</h10>
+                                    <p>30kids</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="card1-container">
+
+                        <img class="circle-img1" src="./imgs/classes-5.jpg" alt="classes-1">
+
+
+                        <div class="c1-container-txt">
+                            <div class="heading2">
+                                <h1>Religion & History</h1>
+                            </div>
+                            <div class="txt-btn2">
+                                <div class="ceo2">
+                                    <img class="img2" src="./imgs/user.jpg" alt="user">
+                                    <div class="ceo-txt2">
+                                        <h5>Jhon Doe</h5>
+                                        <p>Teacher</p>
+                                    </div>
+                                </div>
+                                <div class="btn-on2">
+                                    <button class="btn2">$99</button>
+                                </div>
+
+
+                            </div>
+
+                            <div class="line-txt">
+                                <div class="line-1">
+                                    <hr width="80px" size="3" color="#fe5d37">
+                                    <h8>Age:</h8>
+                                    <p>3-5 Years</p>
+                                </div>
+                                <div class="line-2">
+                                    <hr width="100px" size="3" color="#077e2f">
+                                    <h9>Time:</h9>
+                                    <p>9-10 AM</p>
+                                </div>
+                                <div class="line-3">
+                                    <hr width="100px" size="3" color="#ebc90d">
+                                    <h10>Capacity:</h10>
+                                    <p>30kids</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="card1-container">
+
+                        <img class="circle-img1" src="./imgs/classes-6.jpg" alt="classes-1">
+
+
+                        <div class="c1-container-txt">
+                            <div class="heading2">
+                                <h1>General Knowledge</h1>
+                            </div>
+                            <div class="txt-btn2">
+                                <div class="ceo2">
+                                    <img class="img2" src="./imgs/user.jpg" alt="user">
+                                    <div class="ceo-txt2">
+                                        <h5>Jhon Doe</h5>
+                                        <p>Teacher</p>
+                                    </div>
+                                </div>
+                                <div class="btn-on2">
+                                    <button class="btn2">$99</button>
+                                </div>
+
+
+                            </div>
+
+                            <div class="line-txt">
+                                <div class="line-1">
+                                    <hr width="80px" size="3" color="#fe5d37">
+                                    <h8>Age:</h8>
+                                    <p>3-5 Years</p>
+                                </div>
+                                <div class="line-2">
+                                    <hr width="100px" size="3" color="#077e2f">
+                                    <h9>Time:</h9>
+                                    <p>9-10 AM</p>
+                                </div>
+                                <div class="line-3">
+                                    <hr width="100px" size="3" color="#ebc90d">
+                                    <h10>Capacity:</h10>
+                                    <p>30kids</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!--Make Appointment-->
+
+            <div class="Make-Appointment-container">
+                <div class="Appointment">
+
+                    <div class="Appointment-from">
+                        <h1>Make Appointment</h1>
+                        <div class="Appointment-flex">
+                            <input class="input-Appointments" type="name" placeholder="Gurdian Name" required>
+                            <input class="input-Appointments" type="email" placeholder="Gurdian Email" required>
+                        </div>
+                        <div class="Appointment-flex2">
+                            <input class="input-Appointments" type="text" placeholder="Child Name" required>
+                            <input class="input-Appointments" type="number" placeholder="Child Age" required>
+                        </div>
+
+
+
+                        <textarea class="Message" id="w3review" name="w3review" rows="6" cols="50"
+                            placeholder="Message"></textarea>
+                        <button class="Submit1">Submit</button>
+
+                    </div>
+                </div>
+                <div class="left-appointmet-img">
+                    <img class="Appointment-img" src="./imgs/appointment.jpg" alt="Appointment-img">
+                </div>
+            </div>
+
+            <!--Popular Teachers-->
+            <div class="Popular-Teachers-Main">
+                <div class="text-popular-teacher">
+                    <h1>Popular Teachers</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat.
+                        Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor
+                        duo.</p>
+                </div>
+                <div class="Popular-Teachers">
+
+
+                    <div class="circles-teachers">
+
+                        <img class="Trio-img1" src="./imgs/team-1.jpg" alt="team-1">
+                        <div class="Trio-circle">
+                            <h2>Full Name</h2>
+                            <p>Designation</p>
+                            <div class="icon-1">
+                                <img src="./imgs/facebook-1.png" alt="facebook" width="40px" height="40px">
+                                <img src="./imgs/twitter1.png" alt="twitter" width="40px" height="40px">
+                                <img src="./imgs/instagram-1.png" alt="instagram" width="40px" height="40px">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="circles-teachers">
+
+                        <img class="Trio-img1" src="./imgs/team-2.jpg" alt="team-1">
+                        <div class="Trio-circle">
+                            <h2>Full Name</h2>
+                            <p>Designation</p>
+                            <div class="icon-1">
+                                <img src="./imgs/facebook-1.png" alt="facebook" width="40px" height="40px">
+                                <img src="./imgs/twitter1.png" alt="twitter" width="40px" height="40px">
+                                <img src="./imgs/instagram-1.png" alt="instagram" width="40px" height="40px">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="circles-teachers">
+
+                        <img class="Trio-img1" src="./imgs/team-3.jpg" alt="team-1">
+                        <div class="Trio-circle">
+                            <h2>Full Name</h2>
+                            <p>Designation</p>
+                            <div class="icon-1">
+                                <img src="./imgs/facebook-1.png" alt="facebook" width="40px" height="40px">
+                                <img src="./imgs/twitter1.png" alt="twitter" width="40px" height="40px">
+                                <img src="./imgs/instagram-1.png" alt="instagram" width="40px" height="40px">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!--Our Clients Say! Feedback-container-->
+            <div class="Main-feedback-container">
+
+                <div class="text-popular-teacher2">
+                    <h1>Our Clients Say!</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
+                        eirmod
+                        sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+
+                </div>
+                <div class="feedback-containers">
+                    <div class="btn-feedback-container">
+                        <button class="btn-feedback prev" id="backbtn">←</button>
+                        <button class="btn-feedback next" id="nextbtn">→</button>
+                    </div>
+                    <div class="feedback-wrapper">
+                        <div class="feedback-111">
+                            <div class="feedback-1">
+                                <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum
+                                    rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                                <div class="feedback-1-img">
+                                    <div class="testimonial-1">
+                                        <img class="img-feedback" src="./imgs/testimonial-1.jpg" alt="user">
+                                        <div class="testimonial-1-txt">
+                                            <h1>Client Name</h1>
+                                            <p>Profession</p>
+                                        </div>
+                                    </div>
+                                    <div class="btn-testimonial-1">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="feedback-1">
+                                <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum
+                                    rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+
+                                <div class="feedback-1-img">
+
+                                    <div class="testimonial-1">
+
+                                        <img class="img-feedback" src="./imgs/testimonial-2.jpg" alt="user">
+                                        <div class="testimonial-1-txt">
+                                            <h1>Client Name</h1>
+                                            <p>Profession</p>
+                                        </div>
+                                    </div>
+                                    <div class="btn-testimonial-1">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="feedback-1">
+                                <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum
+                                    rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+
+                                <div class="feedback-1-img">
+
+                                    <div class="testimonial-1">
+
+                                        <img class="img-feedback" src="./imgs/testimonial-3.jpg" alt="user">
+                                        <div class="testimonial-1-txt">
+                                            <h1>Client Name</h1>
+                                            <p>Profession</p>
+                                        </div>
+                                    </div>
+                                    <div class="btn-testimonial-1">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--Get In Touch Quick LinksPhoto Gallery Newsletter-->
+            <!--Footware-->
+            <div class="BOTTOM-MAIN-CONTAINER">
+                <div class="Bottom-container">
+
+                    <div class="get-in-touch">
+                        <h1>Get In Touch</h1>
+                        <p class="btm-text"><i class="fas fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                        <p class="btm-text"><i class="fas fa-phone-alt"></i>+012 345 67890</p>
+                        <p><i class="fas fa-envelope"></i>info@example.com</p>
+                        <div class="btm-icons">
+                            <a class="a-btm-icons">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="a-btm-icons">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a class="a-btm-icons">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a class="a-btm-icons">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!--Quick Links-->
+                    <div class="Quick-Links">
+                        <h1> Quick Links</h1>
+                        <p><i class="arrow right"></i> About Us</p>
+                        <p><i class="arrow right"></i> Contact Us</p>
+                        <p><i class="arrow right"></i> Our Services</p>
+                        <p><i class="arrow right"></i> Privacy Policy</p>
+                        <p><i class="arrow right"></i> Terms & Condition</p>
+
+                    </div>
+
+                    <!--Photo Gallery-->
+
+                    <div class="Main-Photo-Gallery">
+                        <h1>Photo Gallery</h1>
+                        <div class="Photos-Gallery">
+                            <img class="Photos-g" src="./imgs/classes-1.jpg" alt="classes-1">
+                            <img class="Photos-g" src="./imgs/classes-2.jpg" alt="classes-2">
+                            <img class="Photos-g" src="./imgs/classes-3.jpg" alt="classes-3">
+                            <img class="Photos-g" src="./imgs/classes-4.jpg" alt="classes-4">
+                            <img class="Photos-g" src="./imgs/classes-5.jpg" alt="classes-5">
+                            <img class="Photos-g" src="./imgs/classes-6.jpg" alt="classes-6">
+                        </div>
+                    </div>
+
+                    <!--Newsletter-->
+
+                    <div class="Main-Newsletter">
+                        <h1>Newsletter</h1>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+
+                        <div class="mail-input">
+                            <input class="input" type="text" placeholder="Your Email">
+                            <button class="btn-signup">SignUp</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="bottom-hr"><hr></div> -->
+
+                <!--Bottom-Nav-Bar-->
+                <div class="Bottom-Nav-Bar">
+                    <div class="Bottom-Pera-Elem">
+                        <div class="bottom-peragraph">
+                            ©
+                            <a class="border-sitename" href="">Your Site Name</a>
+                            , All Right Reserved.
+                            Designed By
+                            <a class="border-sitename" href="">HTML Codex</a>
+
+                        </div>
+                        
+                        <div class="Bottom-Nav-Elements">
+                            <a class="bottom-home" href="">Home</a>
+
+                            <a class="bottom-home" href="">Cookies</a>
+
+                            <a class="bottom-home" href="">Help</a>
+
+                            <a class="bottom-home-1" href="">FQAs</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom-left-button -->
+             <div class="Container-Bottom-Left-Button">
+                
+                    <a class="Bottom-Left-Button">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                
+             </div>
+
+        </div>
+
+    <!-- </div> -->
+
+    <script src="Child.js"></script>
+
+</body>
+
+
+</html>
